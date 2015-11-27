@@ -29,4 +29,4 @@ net.blobs['data'].data[...] = img_input
 net.forward()
 
 img_output = tools.normalize_to_range(net.blobs['conv'].data[0, 0], 255)
-tools.save_image_from_arary(img_output, img_output_path)
+tools.save_grayscale_image_from_arary(img_output, img_output_path)

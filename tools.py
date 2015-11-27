@@ -8,9 +8,14 @@ import sys
 import Image
 import numpy as np
 
-def save_image_from_arary(img_arr, img_name):
+def save_rgb_image_from_arary(img_arr, img_name):
     im = Image.fromarray(img_arr)
     im.convert('RGB').save(img_name)
+
+def save_grayscale_image_from_arary(img_arr, img_name):
+    img_arr = img_arr.astype("uint8")
+    im = Image.fromarray(img_arr)
+    im.save(img_name)
 
 def load_caffe():
     caffe_root = os.environ['CAFFE_ROOT']
