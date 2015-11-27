@@ -41,4 +41,4 @@ def apply_filter(net, layer_name):
     img_output = net.blobs[layer_name].data[0, 0]
     img_norm = normalize_to_range(img_output, 255)
 
-    return img_output
+    return img_norm
