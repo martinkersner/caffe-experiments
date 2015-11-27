@@ -1,0 +1,19 @@
+name: "convolution"
+input: "data"
+input_shape {
+    dim: 1    # number of images
+    dim: 1    # number of channels
+    dim: 512  # height
+    dim: 512  # width 
+}
+layer {
+    name: "pool"
+    type: "Pooling"
+    bottom: "data"
+    top: "pool"
+    pooling_param {
+        kernel_size: 2
+        stride: 2
+        pool: MAX
+    }
+}
