@@ -1,11 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # Martin Kersner, m.kersner@gmail.com
 # 2015/11/27
 
 import sys
-import numpy as np
-import Image
 
 sys.path.insert(0, "../") # add tools.py
 import paths as p

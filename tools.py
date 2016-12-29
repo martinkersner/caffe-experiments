@@ -5,7 +5,7 @@
 
 import os
 import sys
-import Image
+from PIL import Image
 import numpy as np
 
 def load_caffe():

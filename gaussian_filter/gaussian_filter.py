@@ -4,8 +4,6 @@
 # 2015/11/20
 
 import sys
-import numpy as np
-import Image
 
 sys.path.insert(0, "../") # add tools.py
 import paths as p
