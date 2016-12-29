@@ -1,0 +1,20 @@
+name: "lrn"
+input: "data"
+input_shape {
+    dim: 1    # number of images
+    dim: 1    # number of channels
+    dim: 512  # height
+    dim: 512  # width 
+}
+layer {
+    name: "lrn"
+    type: "LRN"
+    bottom: "data"
+    top: "lrn"
+
+    lrn_param {
+      local_size: 5
+      alpha: 0.0001
+      beta: 0.75
+    }
+}
